@@ -1,6 +1,6 @@
 # ghoulerisator
 
-programm starting like any other python program
+programm starting like any other python console program,
 for example
 
 ~ % python3 /Users/user/Documents/ghoulerisator.py
