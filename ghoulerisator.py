@@ -1,8 +1,13 @@
 import webbrowser ## import webbrowser library
 from time import sleep ## import sleep() method from time for breaks between raws
-os = input('type your os(win/mac): ') ## getting information about user's OS for correct programm's work
 
-try:  ## creating try-except-finally construction
+try:
+    os = input('type your os(win/mac): ') ## getting information about user's OS for correct programm's work
+    
+except KeyboardInterrupt:
+    print("we haven't even started yet")
+
+try:  ## creating new try-except-finally construction
     if os == 'win':     
         webbrowser.get(using = 'windows-default').open_new_tab('https://www.youtube.com/watch?v=QKXi08chD2E&t=0s') 
         sleep(9.7)
